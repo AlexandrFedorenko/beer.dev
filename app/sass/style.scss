@@ -35,11 +35,19 @@
 h1,h2,h3,p{
   margin: 0;
 }
+button,input,textarea,a{
+  outline: none;
+  text-decoration: none;
+}
 body{
   color: black;
   font-size: 18px;
   font-family: $fo2;
+  font-weight: 400;
 }
 
+
+//import
+@import "elements/header";
 
 
