@@ -1,1 +1,15 @@
-+font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff ttf)
+//AngleciaProDisplay-Regular
+@font-face {
+  font-family: 'AngleciaProDisplay-Regular';
+  src: url('../fonts/AngleciaProDisplay-Regular.eot');
+  src: url('../fonts/AngleciaProDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/AngleciaProDisplay-Regular.woff') format('woff'),
+  url('../fonts/AngleciaProDisplay-Regular.ttf') format('truetype'),
+  url('../fonts/AngleciaProDisplay-Regular.svg#AngleciaProDisplay-Regular') format('svg'),
+  url('../fonts/AngleciaProDisplay-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//open-sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
