@@ -1,0 +1,52 @@
+@import "../variables";
+
+.main-content{
+  background: white;
+  padding: 25px 50px;
+  margin-top: 45px;
+}
+.title-page{
+  color: #311f1d;
+  font-family: $fo;
+  font-size: 48px;
+}
+.page-filter-top_link{
+  display: inline-block;
+  margin: 0 5px;
+  color: #311f1d;
+  font-family: $fo2;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: .3s;
+  &:hover{
+    color: #a11c2d;
+    text-decoration: none;
+  }
+}
+.page-filter-top_link--active{
+  color: #a11c2d;
+  text-decoration: none;
+}
+.page-filter-top{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+//media
+@media (max-width: 768px) {
+  .title-page{
+    text-align: center;
+  }
+  .page-filter-top{
+    text-align: center;
+    justify-content: center;
+  }
+  .title-page{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .page-filter-top_link{font-size: 16px}
+}

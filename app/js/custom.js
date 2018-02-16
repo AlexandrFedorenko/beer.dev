@@ -22,6 +22,6 @@ $(".burger-menu").click(function () {
 $('.owl-carousel').owlCarousel({
     items:1,
     loop:true,
-    autoplay:true,
+    // autoplay:true,
     autoplaySpeed:300
 })

@@ -45,10 +45,16 @@ body{
   font-family: $fo2;
   font-weight: 400;
 }
-
+.wrapper{
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url("../img/main-bg.jpg")repeat-y;
+  height: auto;
+}
 
 //import
 @import "elements/header";
 @import "elements/slider";
+@import "pages/index";
 
 

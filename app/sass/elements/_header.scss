@@ -393,9 +393,10 @@
       }
     }
   }
-  .magaz-dropdown {
+  .menu_item--active .magaz-dropdown {
     display: none;
     position: static;
+    &::after{display: none}
     li {
       a {
         padding: 5px 0;

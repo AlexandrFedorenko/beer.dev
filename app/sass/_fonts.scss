@@ -11,5 +11,17 @@
   font-style: normal;
 }
 
+//Bookman Old Style
+@font-face {
+  font-family: 'BookmanOldStyle';
+  src: url('../fonts/BookmanOldStyle.eot');
+  src: url('../fonts/BookmanOldStyle.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BookmanOldStyle.woff2') format('woff2'),
+  url('../fonts/BookmanOldStyle.woff') format('woff'),
+  url('../fonts/BookmanOldStyle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 //open-sans
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
