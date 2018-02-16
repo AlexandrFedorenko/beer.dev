@@ -51,11 +51,13 @@
 				-webkit-backface-visibility: visible;
 				transition: opacity 200ms ease;
 				border-radius: 30px;
+				opacity: .3;
 			}
 
 			&.active,
 			&:hover {
 				span {
+					opacity: 1;
 					background: $dot-background-active;
 				}
 			}

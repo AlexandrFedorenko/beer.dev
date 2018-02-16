@@ -8,18 +8,3 @@ $fo2:'Open Sans', sans-serif;
 $hoverText: #e4bc8a;
 
 
-//sprites
-
-.icon1, .icon3, .cart, .point-hov, .point,
-.search-hov, .search, .icon2, .arr-down-menu
-{ display: inline-block; background: url('../img/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
-
-.icon1 { background-position: -5px -0px; width: 67px; height: 51px; }
-.icon3 { background-position: -5px -56px; width: 57px; height: 48px; }
-.cart { background-position: -5px -109px; width: 41px; height: 37px; }
-.point-hov { background-position: -5px -151px; width: 33px; height: 28px; }
-.point { background-position: -5px -184px; width: 33px; height: 30px; }
-.search-hov { background-position: -5px -219px; width: 25px; height: 24px; }
-.search { background-position: -35px -219px; width: 25px; height: 24px; }
-.icon2 { background-position: -43px -151px; width: 23px; height: 49px; }
-.arr-down-menu { background-position: -51px -109px; width: 7px; height: 6px; }
