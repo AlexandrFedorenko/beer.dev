@@ -1,0 +1,141 @@
+@import "../variables";
+
+footer{
+  background: url("../img/bg-foot.jpg")repeat-x;
+  position: relative;
+  padding: 100px 0 60px 0;
+  width: 100%;
+}
+.over{
+  background: url("../img/top-bg2.jpg") repeat-x;
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  top: -32px;
+}
+.logo_img{
+  display: block;
+  width: 100%;
+  max-width: 150px;
+}
+.foot-ul_item{
+  a{
+    color: #ffffff;
+    font-family: $fo;
+    font-size: 20px;
+    transition: .3s;
+    &:hover{
+      color: $hoverText;
+    }
+  }
+}
+.wrap-ul-foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.copy{
+  color: #fefefe;
+}
+.sear-col{
+  align-self: flex-start;
+  margin-top: 20px;
+}
+.callbacks--foot{
+  flex-direction: column;
+  align-items: flex-end;
+  .callbacks_phone{
+    margin-right: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .callbacks_call{
+    margin-bottom: 50px;
+  }
+}
+.magaz--foot{
+  .point{
+    stroke: $hoverText;
+  }
+  .magaz-dropdown{
+    top: -140px;
+    &::after{
+      border: 10px solid transparent;
+      border-top: 10px solid #e4bc8a;
+      bottom: -18px;
+      top: auto;
+    }
+  }
+}
+.container-p{
+  position: relative;
+}
+.btn-top{
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+.to-top{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #a11c2d;
+  border-radius: 100%;
+  &::after{
+    z-index: 99999;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:auto;
+    border: 6px solid transparent;
+    border-bottom: 10px solid white;
+    width: 0;
+    height: 0;
+  }
+}
+//media
+@media  (max-width: 992px){
+  .foot-ul_item a{
+    font-size: 14px;
+  }
+  .callbacks--foot .callbacks_phone{
+    font-size: 16px;
+  }
+  .callbacks--foot .callbacks_call{
+    font-size: 14px;
+  }
+}
+@media  (max-width: 768px){
+  .btn-top {
+    top: 0;
+  }
+  footer{
+    padding: 50px 0 40px 0;
+    height: auto;
+    background-size: cover;
+  }
+  .logo_img{
+    max-width: 90px;
+    margin: 0 auto;
+  }
+  .wrap-ul-foot{
+    justify-content: space-around;
+  }
+  .copy{
+    text-align: center;
+  }
+  .callbacks--foot{
+    align-items: center;
+  }
+  .callbacks--foot .callbacks_call {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}

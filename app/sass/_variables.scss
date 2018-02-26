@@ -9,3 +9,12 @@ $fo3: 'BookmanOldStyle',serif;
 $hoverText: #e4bc8a;
 
 
+//sprite social
+.vk-hover, .vk, .in-hover, .in
+{ display: inline-block; background: url('../img/social.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.vk-hover { background-position: -5px -0px; width: 39px; height: 25px; }
+.vk { background-position: -5px -30px; width: 39px; height: 25px; }
+.in-hover { background-position: -5px -60px; width: 27px; height: 28px; }
+.in { background-position: -5px -93px; width: 27px; height: 28px; }
+

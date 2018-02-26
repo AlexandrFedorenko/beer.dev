@@ -1,0 +1,62 @@
+@import "../variables";
+
+
+.catalog-item_img{
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.catalog-items_name{
+  color: #000000;
+  max-width: 100px;
+  margin: 0 auto;
+  text-align: left;
+  transition: .3s;
+}
+.col-fl{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+.col-fl-im{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalog-items{
+  padding: 15px 0;
+  border: 1px solid  #ebebeb;
+  a{
+    &:hover{
+      p{
+        color: $hoverText;
+      }
+    }
+  }
+}
+
+.catalog-items_img{
+  max-width: 200px;
+  display: block;
+  margin: 10px auto;
+}
+.catalog-items-bot_p{
+  color: #000000;
+  margin-bottom: 15px;
+  transition: .3s;
+}
+.col-fl-im--ver{
+  flex-direction: column;
+}
+
+
+//media
+
+@media  (max-width: 768px){
+.catalog-items_name{
+  max-width: 100%;
+  margin: 15px auto 0;
+  text-align: center;
+}
+}

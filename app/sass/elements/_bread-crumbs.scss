@@ -1,0 +1,25 @@
+@import "../variables";
+
+.bread-crumbs-ul{
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.bread-crumbs-ul_item{
+  margin: 0 9px;
+  a{
+    color: #000000;
+    font-size: 14px;
+    transition: .3s;
+    &:hover{
+      color: $hoverText;
+    }
+  }
+}
+.bread-crumbs-ul_item--active{
+  a{
+    color: $hoverText;
+  }
+}

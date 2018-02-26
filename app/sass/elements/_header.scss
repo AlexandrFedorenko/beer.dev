@@ -39,6 +39,7 @@
 
 .magaz-dropdown {
   position: absolute;
+  z-index: 99999999999;
   top: 30px;
   transition: .3s ease;
   display: none;
@@ -108,21 +109,22 @@
 .callbacks {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .callbacks_phone {
+  font-size: 17px;
   display: block;
   color: #ffffff;
   font-weight: 700;
   transition: .2s;
-  margin-right: 35px;
   &:hover {
     color: $hoverText;
   }
 }
-
 .callbacks_call {
+  font-size: 15px;
   display: block;
   color: #ffffff;
   transition: .2s;
@@ -336,16 +338,78 @@
   background: #2f1e16;
 }
 
+//social
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-vk{
+  margin-right: 15px;
+}
+.vk{
+  &:hover{
+    background-position: -5px -0px;
+  }
+}
+.in{
+  &:hover{
+    background-position: -5px -60px;
+  }
+}
+//mail-top
+.mail-top_link{
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color .3s;
+  &:hover{
+    color: $hoverText;
+  }
+}
+
+
+
 //media
+@media (max-width: 1200px){
+  .callbacks_phone{
+    font-size: 14px;
+  }
+  .callbacks_call{
+    font-size: 13px;
+  }
+}
 @media (max-width: 992px) {
+  .header-top{
+    background-size:cover;
+    padding: 10px 0;
+  }
+  .magaz{
+    justify-content: center;
+    margin-bottom: 15px;
+  }
   .callbacks_phone {
-    margin-right: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .bars{
+    justify-content: center;
   }
   .logo_link {
     top: -12px;
   }
   .menu_item a {
     font-size: 14px;
+  }
+  .callbacks{
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .callbacks_call{
+    font-size: 16px;
   }
 }
 
