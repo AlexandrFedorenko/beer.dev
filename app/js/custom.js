@@ -13,6 +13,12 @@ $(".open").click(function (e) {
     }
 });
 
+//filter
+$(".open-fil").click(function (e) {
+    e.preventDefault();
+
+});
+
 //burger
 $(".burger-menu").click(function () {
     $(this).toggleClass("menu-on");
@@ -131,33 +137,12 @@ function setPlus() {
 }
 
 
-//filter slider
-$("#slider2").slider({
-    min: 0,
-    max: 10,
-    values: [2, 5],
-    range: true,
-    stop: function (event, ui) {
-        $("input#minSmol").val($("#slider2").slider("values", 0));
-        $("input#maxSmol").val($("#slider2").slider("values", 1));
-    },
-    slide: function (event, ui) {
-        $("input#minSmol").val($("#slider2").slider("values", 0));
-        $("input#maxSmol").val($("#slider2").slider("values", 1));
-    }
-});
-$("#slider").slider({
-    min: 0,
-    max: 1000,
-    values: [50, 500],
-    range: true,
-    stop: function (event, ui) {
-        $("input#minCost").val($("#slider").slider("values", 0));
-        $("input#maxCost").val($("#slider").slider("values", 1));
-    },
-    slide: function (event, ui) {
-        $("input#minCost").val($("#slider").slider("values", 0));
-        $("input#maxCost").val($("#slider").slider("values", 1));
-    }
-});
 
+
+
+//video
+var vid2 = document.querySelector('.video-vim');
+
+function play() {
+    vid2.play();
+}

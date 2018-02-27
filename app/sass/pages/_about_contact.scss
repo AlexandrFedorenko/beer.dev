@@ -1,18 +1,150 @@
 @import "../variables";
 
-.about-img_img{
+.about-img_img {
   display: block;
   width: 100%;
-  max-width: 460px;
   margin: 0 auto;
 }
-.item-block_text--size{
+
+.item-block_text--size {
   max-width: 100%;
 }
-.item-block--size{
+
+.item-block--size {
   max-width: 100%;
   margin-bottom: 20px;
 }
-.item-block--mar{
+
+.item-block--mar {
   margin-top: 0;
+}
+
+.video {
+  position: relative;
+}
+
+.video_play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 128px;
+  height: 128px;
+  display: block;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.video-vim {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 375px;
+  border: none;
+}
+
+.cont-tel_nam {
+  color: #e4bc8a;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.cont-tel_tel {
+  display: block;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  transition: .3s;
+  &:hover {
+    color: $hoverText;
+  }
+}
+
+.cont-text {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.cont-tel_mail {
+  font-size: 18px;
+}
+
+.cont-soc_ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.vk-red {
+  display: block;
+  margin-right: 15px;
+  background: url("../img/vk-red.png") no-repeat;
+  width: 39px;
+  height: 23px;
+}
+
+.in-red {
+  display: block;
+  margin-right: 15px;
+  background: url("../img/in-red.png") no-repeat;
+  width: 27px;
+  height: 26px;
+}
+.magaz-cont{
+  justify-content: flex-start;
+  svg{
+    stroke: #a11c2d;
+    stroke-width: 2px;
+  }
+  a{
+    color: black;
+  }
+  .drop-red{
+    display: block;
+    background: url(../img/drop-red.png) no-repeat;
+    width: 7px;
+    height: 6px;
+    margin-top: 5px;
+    transition: .3s;
+  }
+  .magaz_item--active{
+    &:hover{
+      .drop-red{
+        transform:rotate(180deg);
+      }
+    }
+  }
+}
+.cont-flex{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+//media
+
+@media (max-width: 768px) {
+  .about-img_img {
+    margin-bottom: 30px;
+  }
+  .video_play {
+    width: 50px;
+    height: 50px;
+  }
+  .map{
+    margin-bottom: 30px;
+  }
+  .cont-tel_tel{
+    font-size: 18px;
+  }
 }
